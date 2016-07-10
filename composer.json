@@ -1,0 +1,15 @@
+{
+  "name": "gesell/farbtonkonfigurator",
+  "description": "Farbtonkonfigurator zur einfachen Auswahl von Farbtönen.",
+  "require": {
+    "magento/magento-composer-installer": "*"
+  },
+  "type": "magento2-module",
+  "version": "0.0.1",
+  "autoload": {
+    "files": [ "registration.php" ],
+      "psr-4": {
+        "Gesell\\Farbtonkonfigurator\\": ""
+    }
+  }
+}
