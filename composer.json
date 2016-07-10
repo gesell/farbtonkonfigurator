@@ -1,5 +1,5 @@
 {
-  "name": "agesell/farbtonkonfigurator",
+  "name": "gesell/farbtonkonfigurator",
   "description": "Farbtonkonfigurator zur einfachen Auswahl von Farbtönen.",
   "require": {
     "magento/magento-composer-installer": "*"
