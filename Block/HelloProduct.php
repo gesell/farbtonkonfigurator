@@ -1,5 +1,5 @@
 <?php
-namespace gesell\farbtonkonfigurator\Block;
+namespace Gesell\Farbtonkonfigurator\Block;
 
 class HelloProduct extends \Magento\Catalog\Block\Product\View\AbstractView {
 
