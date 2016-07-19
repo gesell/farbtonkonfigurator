@@ -3,6 +3,7 @@ namespace Gesell\Farbtonkonfigurator\Block;
 
 class HelloProduct extends \Magento\Catalog\Block\Product\View\AbstractView {
 
+<<<<<<< HEAD
 public function afterGetPrice(\Magento\Catalog\Model\Product $subject, $result) {
 return $result*333;
 }
@@ -39,3 +40,13 @@ return $result*333;
 	*/
 }
 
+=======
+	/**
+	 * Get the name of the current product
+	 * @return string
+	 */
+	public function getProductName() {
+		return $this->getProduct()->getName();
+	}
+}
+>>>>>>> 9e20920954d423fabcc34035435672462e12692d

@@ -1,4 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="Gesell_Farbtonkonfigurator" setup_version="2.1.0" />
+<<<<<<< HEAD
 </config>
+=======
+</config>
+>>>>>>> 9e20920954d423fabcc34035435672462e12692d
