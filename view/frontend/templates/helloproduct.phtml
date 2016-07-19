@@ -1,0 +1,148 @@
+<?php /** @var $block \Gesell\Farbtonkonfigurator\Block\HelloProduct */ ?>
+
+<?php // echo $block->afterGetPrice($result); ?>
+
+<div id="var_color">VAR_COLOR</div>
+<div id="mycolor">
+
+
+
+<script>
+
+
+
+window.loadcolor = function(obj) {
+
+var var_color = document.getElementById("var_color");
+var_color.innerHTML = obj.className;
+
+//alert(location.href);
+
+jQuery.ajax({
+                    type: "POST",
+					//url: "localhost/farbengesell_shop/pub/fish.php",
+                    //url: location.href,
+					url: "<?php echo $block->getHelloWorldUrl() ?>",
+                    data: { var_color_id: var_color.innerHTML },
+					//context: { var_color_id: obj.className },
+					//dataType: "text",
+                    success: function(data)
+                    {
+					//jQuery(data).find('#var_color');
+					//alert(data);
+					//content.html(data);
+                     // alert("success!" + data);
+	
+					  var_color.innerHTML = data;
+                    }
+
+        });
+
+//if (obj.className === "C1"){
+//	alert("JS C1");
+//}
+}
+
+
+
+</script>
+<?php echo $this->getUrl('Farbtonkonfigurator/Block/Product'); ?>
+
+<!--<script>
+window.loadcolor = function(obj) {
+
+//var var_color = document.getElementById("var_color");
+//var_color.innerHTML = obj.className;
+
+var var_color = obj.className;
+
+//alert(location.href);
+
+	
+jQuery.ajax({
+                    type: "POST",
+					url: location.href,
+                    //url: "<?php echo $block->getHelloWorldUrl() ?>",
+                    data: { var_color_id: var_color },
+					//context: { var_color_id: obj.className },
+                    success: function(data)
+                    {
+					//var_color.innerHTML = this.data;
+					//alert(this.data);
+					handleData(this.data);
+			
+                    }
+
+        });
+
+
+function handleData(data) {
+   // Antwort des Server ggf. verarbeiten
+   alert("SENT: " + data);
+}
+}
+
+
+</script>-->
+
+<?php /*echo $block->getUrl('farbtonkonfigurator/index/index') ?>
+BREAK!! */ ?>
+<?php /* 
+if (isset($_POST['var_color_id'])) {
+    $var_color = $_POST['var_color_id'];
+	echo $var_color;
+}*/
+?>
+
+</div>
+
+<style>
+#color_button_gallery {padding-top:30px;width:245px; height:1050px;padding-left:20px;overflow:hidden; background-color:#f4f4f4;float:left;}
+
+#configurator_button {height:15px; width:4%; padding:10px;margin:5px;display: inline-block;border:1px solid #dedede}
+#configurator_button:hover {opacity:0.8;}
+
+#configurator_button:hover {cursor:pointer;}
+</style>
+<div id="farbtonkonfigurator">
+	<h3>StoColor System</h3>
+	<div id="card_01">
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#c8ac31" class="C3" title="31100"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#d6b83d" class="C3" title="31101"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#dfc34e" class="C2" title="31102"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#eed367" class="C2" title="31103"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#f7de7d" class="C1" title="31104"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#fae8a0" class="C1" title="31105"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#f8e496" class="C1" title="31106"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#ffedb7" class="C1" title="31107"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#fff1c7" class="C1" title="31108"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#f9f0d3" class="C1" title="31109"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#c0a44e" class="C3" title="31110"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#ddc57a" class="C2" title="31111"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#ddc57a" class="C2" title="31112"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#ebd599" class="C1" title="31113"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#f1dca2" class="C1" title="31114"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#f3e2b7" class="C1" title="31115"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#f7eac5" class="C1" title="31116"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#93854f" class="C2" title="31120"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#ac9c68" class="C2" title="31121"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#baaa81" class="C1" title="31122"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#c2b493" class="C1" title="31123"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#675f47" class="C3" title="31130"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#857b5f" class="C2" title="31131"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#928e73" class="C1" title="31132"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#a9a188" class="C1" title="31133"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#bdb89f" class="C1" title="31134"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#cfc7b3" class="C1" title="31135"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#dbd4c2" class="C1" title="31136"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#e6dfd1" class="C1" title="31137"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#9f8733" class="C3" title="31140"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#776a39" class="C3" title="31141"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#5a5337" class="C3" title="31142"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#514b3d" class="C3" title="31143"></span>
+	<span onclick="loadcolor(this);" id="configurator_button" style="background-color:#fdb833" class="C3" title="31200"></span>
+	
+	
+	
+	</div>
+	</div>
